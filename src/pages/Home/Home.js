@@ -7,7 +7,7 @@ import Skills from '../../components/Skills/Skills';
 
 const Home = () => {
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-7xl mx-auto px-4'>
       <Hero />
       <About />
       <Skills />
