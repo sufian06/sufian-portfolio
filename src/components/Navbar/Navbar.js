@@ -67,9 +67,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden lg:block">
-          <button className="bg-white py-1 px-4 rounded-md font-semibold">
+          <a href="Abu_Sufian_Resume.pdf" download='Abu_Sufian_Resume.pdf' className="bg-white py-1 px-4 rounded-md font-semibold">
             Resume
-          </button>
+          </a>
         </div>
         {/* mobile menu */}
         <div className="lg:hidden bg-white w-8 h-8 flex items-center justify-center rounded-full cursor-pointer">
