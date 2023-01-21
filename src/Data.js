@@ -99,36 +99,52 @@ export const workImages = [
     img: work1,
     name: "project 1",
     category: "web",
+    livesite: 'https://resale-market-dd629.web.app/',
+    github: 'https://github.com/sufian06/resale-market-client',
+    serverCode: 'https://github.com/sufian06/resale-market-server',
   },
   {
     id: 2,
     img: work2,
     name: "project 2",
     category: "web",
+    livesite: 'https://service-review-d1fd1.web.app/',
+    github: 'https://github.com/sufian06/individual-service-client',
+    serverCode: 'https://github.com/sufian06/individual-service-server'
   },
   {
     id: 3,
     img: work3,
     name: "project 3",
     category: "web",
+    livesite: 'https://e-school-bc1e7.web.app/',
+    github: 'https://github.com/sufian06/e-school-client',
+    serverCode: 'https://github.com/sufian06/e-school-server'
   },
   {
     id: 4,
     img: work4,
     name: "project 4",
     category: "app",
+    livesite: 'https://courageous-sfogliatella-95264c.netlify.app/',
+    github: 'https://github.com/sufian06/quiz-buzz'
   },
   {
     id: 5,
     img: work5,
     name: "project 5",
     category: "app",
+    livesite: 'https://adorable-kangaroo-2d5cc4.netlify.app/',
+    github: 'https://github.com/sufian06/ema-john-simple',
+    serverCode: 'https://github.com/sufian06/ema-john-simple-server'
   },
   {
     id: 6,
     img: work6,
     name: "project 6",
     category: "design",
+    livesite: 'https://t-shirt-menia-sufian.netlify.app/',
+    github: ''
   },
 ];
 

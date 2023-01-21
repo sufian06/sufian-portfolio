@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FiEye, FiGithub } from "react-icons/fi";
+import { TfiServer } from "react-icons/tfi";
 import { workImages } from "../../Data";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
@@ -26,29 +27,51 @@ const Portfolio = () => {
               src={workImage.img}
               alt="work-img"
             />
-            <motion.div className="hoverLayer"
-            initial={{ opacity: 0 }}
-            whileHover={{ opacity: [0, 1] }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            <motion.div
+              className="hoverLayer"
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity: [0, 1] }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <motion.a
-                href="#"
-                whileInView={{ scale: [0, 1] }}
-                whileHover={{ scale: [1, 1.1] }}
-                transition={{ duration: 0.3 }}
-                className='w-10 h-10 bg-black/10 flex items-center justify-center rounded-full'
-              >
-                <FiGithub className="text-white text-xl" />
-              </motion.a>
-              <motion.a
-                href="google.com"
-                whileInView={{ scale: [0, 1] }}
-                whileHover={{ scale: [1, 1.1] }}
-                transition={{ duration: 0.3 }}
-                className='w-10 h-10 bg-black/10 flex items-center justify-center rounded-full'
-              >
-                <FiEye className="text-white text-xl" />
-              </motion.a>
+              {workImage.github && (
+                <motion.a
+                  href={workImage.github}
+                  rel="noopener"
+                  target="_blank"
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
+                  className="w-10 h-10 bg-black/10 flex items-center justify-center rounded-full"
+                >
+                  <FiGithub className="text-white text-xl" />
+                </motion.a>
+              )}
+              {workImage.livesite && (
+                <motion.a
+                  href={workImage.livesite}
+                  rel="noopener"
+                  target="_blank"
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
+                  className="w-10 h-10 bg-black/10 flex items-center justify-center rounded-full"
+                >
+                  <FiEye className="text-white text-xl" />
+                </motion.a>
+              )}
+              {workImage.serverCode && (
+                <motion.a
+                  href={workImage.serverCode}
+                  rel="noopener"
+                  target="_blank"
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
+                  className="w-10 h-10 bg-black/10 flex items-center justify-center rounded-full"
+                >
+                  <TfiServer className="text-white text-xl" />
+                </motion.a>
+              )}
             </motion.div>
           </div>
         ))}

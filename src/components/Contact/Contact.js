@@ -27,15 +27,6 @@ const Contact = () => {
       );
   };
 
-  const message = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const name = form.user_name.value;
-    const email = form.user_email.value;
-    const message = form.message.value;
-    console.log(name, email, message);
-  }
-
   return (
     <div id="contact" className="pt-16">
       <div className="text-center mb-4">
