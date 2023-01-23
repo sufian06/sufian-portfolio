@@ -36,10 +36,7 @@ const Contact = () => {
         <div className="">
           <h3 className="capitalize text-2xl font-bold mb-4">just say hi!</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            iste minus officiis atque debitis. Culpa a reprehenderit at illo
-            dolor omnis quisquam ut vero consequuntur sequi ea delectus,
-            assumenda modi.
+            I am here to make any website in efficient way. If you want to contact with me, just send me the message or e-mail.
           </p>
           {contacts.map((contact) => (
             <div key={contact.id} className="flex items-center mt-4">
